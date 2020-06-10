@@ -140,14 +140,13 @@ img {
   font-family: 'Montserrat', sans-serif;
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
   img {
-    width: 33rem;
+    width: 50rem;
     height: 20rem;
     margin: 1%;
   }
-}
-
+} */
 @media (max-width: 800px) {
   .projects {
     background-color: #d7cfe2;
@@ -156,11 +155,12 @@ img {
   }
 }
 
-@media (max-width: 1185px) {
+@media (max-width: 1200px) {
   img {
     width: 40rem;
     height: 20rem;
-    margin: 1%;
+    margin: 2%;
+    padding-right: 1%;
   }
 }
 
