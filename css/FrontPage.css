@@ -1,0 +1,274 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  /* background-image: url("imgs/background.jpg");
+  background-size: cover; */
+  height: 100%;
+  width: 100%;
+  margin-top: 12%;
+}
+
+footer {
+  height: 100px;
+}
+
+/* BUTTONS */
+.btn {
+  float: left;
+  margin: 0px 1px;
+}
+
+.btn-outline-dark {
+  background: white;
+  border: 1px solid #ae95d4;
+  color: #ae95d4;
+}
+
+.btn-outline-dark:hover {
+  background: #837694;
+  border: 1px solid #40167A;
+  color: White;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* NAVBAR */
+.navbar-custom1 {
+  background-color: #5a4776;
+}
+
+.nav-link {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link:hover {
+  color: #c7cdff;
+  /* backgrosund-color: #6d568f; */
+}
+
+.nav-link:active {
+  color: #8a95ff;
+  /* background-color: rgba(10, 35, 255, 0.39); */
+}
+
+.navbar {
+  height: 8%;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: #c7cdff;
+}
+
+.navbar-brand:active {
+  color: #8a95ff;
+}
+
+/* JUMBOTRON */
+div.jumbotron.head {
+  border: 3px solid #B1A2C7;
+  border-top: 6px double #B1A2C7;
+  border-bottom: 6px double #B1A2C7;
+  padding: 8% 2%;
+  margin: 11% 20% 13%;
+  text-align: center;
+  align-items: center;
+  height: 21rem;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  /* word-wrap: break-word; */
+}
+
+div.mainJumbotron {
+  text-align: center;
+}
+
+img {
+  width: 22rem;
+  height: 15rem;
+  margin: 1%;
+}
+
+.display-6 {
+  font-weight: 100;
+  font-size: 55px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#mainText {
+  font-size: 1rem;
+  color: #B1A2C7;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+/* projects */
+.projects {
+  background-color: #d7cfe2;
+  height: 100%;
+  clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
+}
+
+.container {
+  /* background-color: yellow; */
+  /* height: 65rem; */
+  padding-top: 20%;
+  padding-bottom: 40%;
+  justify-content: center;
+  /* height: auto; */
+}
+
+.projectsText {
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  line-height: 10rem;
+  text-transform: capitalize;
+  /* text-decoration: underline; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 750px) {
+  img {
+    width: 33rem;
+    height: 20rem;
+    margin: 1%;
+  }
+}
+
+@media (max-width: 800px) {
+  .projects {
+    background-color: #d7cfe2;
+    height: 100%;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  }
+}
+
+@media (max-width: 1185px) {
+  img {
+    width: 40rem;
+    height: 20rem;
+    margin: 1%;
+  }
+}
+
+.example {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 25%;
+  justify-content: center;
+  display: inline-block;
+}
+}
+
+/* HR */
+#projectshr {
+  height: 1px;
+  width: 50%;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* button */
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #5a4776;
+  width: 80%;
+  height: 2.75rem;
+  left: 10%;
+  text-align: center;
+  border-radius: 25px;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-family: 'Montserrat';
+  letter-spacing: .2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: box-shadow 1s cubic-bezier(0, 0, 0, 1), background-color 1s cubic-bezier(0, 0, 0, 1);
+}
+
+button:hover {
+  background-color: #d7cfe2;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact {
+  text-align: #5a4776;
+}
+
+/* NOT MINNE< SCROLLING PICTURE */
+.example {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 33%;
+  height: 25%;
+  justify-content: center;
+  display: inline-block;
+}
+
+.example .fadedbox {
+  background-color: white;
+  position: absolute;
+  top: 1%;
+  left: 3%;
+  color: black;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: calc(100% - 3%);
+  height: calc(100% - 2%);
+  padding: 0;
+  text-align: center;
+  font-size: .25rem;
+  border: 2px solid black;
+  margin: 0;
+}
+
+.example:hover .fadedbox {
+  opacity: .85;
+  backdrop-filter: blur(5px);
+}
+
+.example .text {
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+  margin-top: calc(50% - 35%);
+}
+
+.example .title {
+  font-size: .5rem;
+  /* text-transform: uppercase; */
+  opacity: 0;
+  /* transition-delay: 0.2s; */
+  transition-duration: 0.3s;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: .75rem;
+}
+
+.example:hover .title,
+.example:focus .title {
+  opacity: 1;
+  transform: translateY(20px);
+}
